@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'MinecraftHeading';
+  src: url('/windgear/fonts/minecraft_title.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MinecraftBody';
+  src: url('/windgear/fonts/minecraft.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    @apply bg-create-bg text-create-text font-sans antialiased;
+  }
+
+  a, button, [role="button"] {
+    @apply cursor-crosshair;
+  }
+}
