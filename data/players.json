@@ -1,0 +1,40 @@
+{
+  "players": [
+    {
+      "id": "werl",
+      "nickname": "Werl",
+      "skin": "skin-werl.png",
+      "generation": "Первое поколение",
+      "timeOnServer": "1 год 2 месяца",
+      "tags": ["Главный админ", "Медиа"],
+      "stats": { "projects": 5, "builds": 25, "orders": 0 }
+    },
+    {
+      "id": "dante",
+      "nickname": "Dante",
+      "skin": "skin-dante.png",
+      "generation": "Второй набор",
+      "timeOnServer": "4 месяца",
+      "tags": ["Главный заводчанин", "Строитель ландшафтов"],
+      "stats": { "projects": 1, "builds": 3, "orders": 1 }
+    },
+    {
+      "id": "debos",
+      "nickname": "DeBossik",
+      "skin": "skin-debos.png",
+      "generation": "Второй набор",
+      "timeOnServer": "3 месяца",
+      "tags": ["Строит метро", "Друг Юры"],
+      "stats": { "projects": 2, "builds": 3, "orders": 1 }
+    },
+    {
+      "id": "lacker",
+      "nickname": "MrAnLacker",
+      "skin": "skin-lacker.png",
+      "generation": "Первый набор",
+      "timeOnServer": "8 месяцев",
+      "tags": ["Винодел", "Строитель коробок", "Помогатель"],
+      "stats": { "projects": 2, "builds": 3, "orders": 2 }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+backend:
+  name: github
+  repo: leoanrdoWer/windgear # Твой репозиторий на GitHub
+  branch: main
+
+media_folder: "public/images" # Куда сохранять картинки
+public_folder: "/windgear/images" # Откуда они будут доступны на сайте
+
+collections:
+  - name: "players"
+    label: "Игроки"
+    files:
+      - name: "list"
+        label: "Список игроков"
+        file: "public/data/players.json"
+        fields:
+          - label: "Игроки"
+            name: "players"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Никнейм", name: "nickname", widget: "string"}
+              - {label: "Скин (картинка)", name: "skin", widget: "image"}
+              - {label: "Теги", name: "tags", widget: "list", field: {label: "Тег", name: "tag", widget: "string"}}
+              - label: "Статистика"
+                name: "stats"
+                widget: "object"
+                fields:
+                  - {label: "Проекты", name: "projects", widget: "number", default: 0}
+                  - {label: "Постройки", name: "builds", widget: "number", default: 0}
+                  - {label: "Гос. заказы", name: "orders", widget: "number", default: 0}
+
+  - name: "projects"
+    label: "Проекты"
+    files:
+      - name: "list"
+        label: "Список проектов"
+        file: "public/data/projects.json"
+        fields:
+          - label: "Проекты"
+            name: "projects"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Название", name: "title", widget: "string"}
+              - {label: "Описание", name: "description", widget: "text"}
+
+  - name: "settings"
+    label: "Настройки сайта"
+    files:
+      - name: "general"
+        label: "Общие"
+        file: "public/data/settings.json"
+        fields:
+          - {label: "Название сервера", name: "serverName", widget: "string", default: "Windgear"}
+          - {label: "Слоган", name: "slogan", widget: "string"}
+          - {label: "О сервере", name: "about", widget: "markdown"}
+          - {label: "Цвета тегов", name: "tagColors", widget: "list", fields: [
+            {label: "Тег", name: "tag", widget: "string"},
+            {label: "Цвет (HEX)", name: "color", widget: "string", default: "#b87333"}
+          ]}
