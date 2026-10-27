@@ -17,16 +17,21 @@ export default function Footer() {
 
                 <div className="py-16 flex flex-col lg:flex-row justify-between items-center gap-10">
                     <div className="text-center lg:text-left">
-                        <img src="/windgear/images/logo-round.png" alt="Windgear" className="h-16 object-contain mb-4 mx-auto lg:mx-0" />
+                        <img src="/windgear/images/logo-round.png" alt="Windgear" className="h-24 object-contain mb-4 mx-auto lg:mx-0" />
                         <p className="text-create-muted text-lg max-w-md">
                             Присоединяйся к нашему сообществу инженеров в тг, там мы делимся новостями и схематиками!
                         </p>
                     </div>
 
                     <div className="flex flex-col items-center gap-4">
-                        <Button variant="primary" href="https://discord.gg/yourlink" className="px-12 py-4 text-base">
+                        <a
+                            href={CONFIG.LINKS.SUBMIT}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hidden md:inline-flex items-center justify-center px-6 py-2 text-xs font-mc bg-transparent border-2 border-create-copper text-create-copper hover:bg-create-copper hover:text-white transition-colors cursor-crosshair"
+                        >
                             ПОДАТЬ ЗАЯВКУ
-                        </Button>
+                        </a>
                         <span className="text-xs text-create-muted font-mc">Участников: {CONFIG.SERVER.SLOTS_ALREDY}</span>
                         <span className="text-xs text-create-muted font-mc">Осталось мест: {CONFIG.SERVER.SLOTS_FREE}</span>
                     </div>

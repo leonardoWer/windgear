@@ -5,6 +5,8 @@ import About from './pages/about/AboutPage';
 import Header from "./components/Header.jsx";
 import Rating from "./pages/rating/Rating.jsx";
 import Footer from "./components/Footer.jsx";
+import ProjectsPage from "./pages/project/ProjectsPage.jsx";
+import ProjectPage from "./pages/project/ProjectPage.jsx";
 
 function App() {
     return (
@@ -16,6 +18,8 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/player/:id" element={<PlayerPage />} />
                         <Route path="/about" element={<About />} />
+                        <Route path="/projects" element={<ProjectsPage />} />
+                        <Route path="/project/:id" element={<ProjectPage />} />
                         <Route path="/rating" element={<Rating />} />
                     </Routes>
                 </main>

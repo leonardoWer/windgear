@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import {CONFIG} from "../../utils/config.js";
 import Tag from "../../components/Tag.jsx";
+import PlayerProjects from "./components/PlayerProjects.jsx";
 
 export default function PlayerPage() {
     const { id } = useParams();
@@ -71,14 +72,7 @@ export default function PlayerPage() {
             {/* Проекты игрока */}
             <div>
                 <h2 className="text-xl font-mc text-white mb-6">ПРОЕКТЫ</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {projects.map(project => (
-                        <div key={project.id} className="bg-create-panel border border-white/5 p-6 rounded-sm hover:border-white/20 transition-colors">
-                            <h3 className="text-lg font-bold text-white mb-3">{project.title}</h3>
-                            <p className="text-sm text-create-muted leading-relaxed">{project.description}</p>
-                        </div>
-                    ))}
-                </div>
+                <PlayerProjects playerId={id} projects={projects} />
             </div>
         </div>
     );

@@ -14,7 +14,8 @@
       "stats": {
         "projects": 5,
         "builds": 25,
-        "orders": 0
+        "orders": 0,
+        "transport": 6
       }
     },
     {
@@ -23,11 +24,12 @@
       "stats": {
         "projects": 1,
         "builds": 2,
-        "orders": 0
+        "orders": 0,
+        "transport": 1
       },
       "id": "dima_51",
       "nickname": "Dima_51",
-      "skin": "skin-dima_51.png",
+      "skin": "dima_51.png",
       "tags": [
         "Главный админ",
         "Играет в ванише",
@@ -38,7 +40,7 @@
     {
       "id": "dante",
       "nickname": "Dante",
-      "skin": "skin-dante.png",
+      "skin": "dante.png",
       "generation": "Первый набор",
       "timeOnServer": "5 месяцев",
       "tags": [
@@ -48,7 +50,8 @@
       "stats": {
         "projects": 1,
         "builds": 3,
-        "orders": 1
+        "orders": 1,
+        "transport": 3
       }
     },
     {
@@ -57,11 +60,12 @@
       "stats": {
         "projects": 3,
         "builds": 2,
-        "orders": 0
+        "orders": 0,
+        "transport": 1
       },
       "id": "antonio",
       "nickname": "MrAntonio",
-      "skin": "skin-antonio.png",
+      "skin": "antonio.png",
       "tags": [
         "Когда репо?",
         "Ничего не делает, но постоянно что-то делает",
@@ -81,7 +85,7 @@
       },
       "id": "matvuha",
       "nickname": "Matvuha132",
-      "skin": "skin-matvuha.png",
+      "skin": "matvuha.png",
       "tags": [
         "Архитектор",
         "Вечно на работе",
@@ -103,7 +107,8 @@
       "stats": {
         "projects": 2,
         "builds": 3,
-        "orders": 1
+        "orders": 1,
+        "transport": 2
       }
     },
     {
@@ -111,12 +116,13 @@
       "timeOnServer": "5 месяцев",
       "stats": {
         "projects": 2,
-        "builds": 4,
-        "orders": 1
+        "builds": 3,
+        "orders": 1,
+        "transport": 2
       },
       "id": "toaster",
       "nickname": "Toaster",
-      "skin": "skin-toaster.png",
+      "skin": "toaster.png",
       "tags": [
         "Дурачина",
         "Булава мэн",
@@ -142,7 +148,7 @@
         "projects": 2,
         "builds": 5,
         "orders": 2,
-        "transport": 0
+        "transport": 1
       }
     },
     {
@@ -151,11 +157,12 @@
       "stats": {
         "projects": 0,
         "builds": 2,
-        "orders": 0
+        "orders": 0,
+        "transport": 0
       },
       "id": "badrn",
       "nickname": "BadRN",
-      "skin": "skin-badrn.png",
+      "skin": "badrn.png",
       "tags": [
         "Устал от майна",
         "Хотел как лучше, а получилось как всегда",
@@ -173,7 +180,7 @@
       },
       "id": "terefy",
       "nickname": "Terefy",
-      "skin": "skin-terefy.png",
+      "skin": "terefy.png",
       "tags": [
         "Проект по Холлоу Найт",
         "Ничего не делает, но постоянно что-то делает",

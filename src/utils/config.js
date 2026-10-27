@@ -5,8 +5,12 @@ export const CONFIG = {
     IMAGES: {
         LOGO_ROUND: '/windgear/images/logo-round.png',
         LOGO_LONG: '/windgear/images/logo-long.png',
+        LOGO_SHORT: '/windgear/images/logo-short.png',
         HERO_BG: '/windgear/images/hero-bg.png',
+        HOME_ABOUT: '/windgear/images/home-about.png',
+
         SKINS: '/windgear/images/player/skin/',
+        PROJECTS: '/windgear/images/projects/',
         GALLERY: '/windgear/images/gallery-',
         MOD_CREATE: '/windgear/images/create-logo.png',
         MOD_AERO: '/windgear/images/create-aeronautics-logo.png',

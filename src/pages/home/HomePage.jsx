@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import PlayerCard from '../player/PlayerCard.jsx';
+import PlayerCard from '../player/components/PlayerCard.jsx';
 import {Link} from 'react-router-dom';
 import Button from "../../components/Button.jsx";
 import Divider from "../../components/Devider.jsx";
@@ -37,7 +37,7 @@ export default function Home() {
 
                 <div className="relative z-10 text-center px-4 flex flex-col items-center max-w-4xl mx-auto">
                     {/* Основной логотип */}
-                    <img src={CONFIG.IMAGES.LOGO_ROUND} alt="Windgear" className="h-48 md:h-64 object-contain mb-6"/>
+                    <img src={CONFIG.IMAGES.LOGO_LONG} alt="Windgear" className="h-48 md:h-64 object-contain mb-6"/>
 
                     {/* Новый текст */}
                     <p className="text-lg md:text-xl text-create-text font-sans mb-10 max-w-2xl">
@@ -93,7 +93,7 @@ export default function Home() {
                             Всё начиналось с того, что вышел мод, изменивший майнкрафт -
                             Create Aeronautics. Тогда мы небольшой компанией друзей
                             решили запустить сервер, чтобы немного поиграть..
-                            А потом.. появилось комьюнити, стартовал отбор.
+                            А потом.. появилось комьюнити, стартовал отбор
                         </p>
                         <p className="text-lg text-create-muted leading-relaxed mb-8">
                             Теперь мы - Windgear
@@ -103,7 +103,11 @@ export default function Home() {
                         </Link>
                     </div>
                     <div className="flex-1 w-full h-80 bg-create-panel border border-white/10 rounded-sm">
-                        {/* Место для скриншота */}
+                        <img
+                            src={CONFIG.IMAGES.HOME_ABOUT}
+                            alt="Скриншот сервера Windgear"
+                            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
                     </div>
                 </section>
 

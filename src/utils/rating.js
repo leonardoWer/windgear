@@ -1,9 +1,9 @@
 export const calculateRating = (stats) => {
     if (!stats) return 0;
     return (
-        (stats.projects * 10) +
+        (stats.projects * 15) +
         (stats.builds * 5) +
-        (stats.orders * 3) +
+        (stats.orders * 10) +
         (stats.transport * 8)
     );
 };

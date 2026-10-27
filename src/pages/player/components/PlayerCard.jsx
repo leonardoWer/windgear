@@ -1,10 +1,10 @@
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
-import { CONFIG } from '../../utils/config';
-import Tooltip from '../../components/Tooltip';
-import PlayerTooltipContent from '../../components/tooltips/PlayerTooltipContent';
-import Tag from "../../components/Tag.jsx";
+import { CONFIG } from '../../../utils/config.js';
+import Tooltip from '../../../components/Tooltip.jsx';
+import PlayerTooltipContent from '../../../components/tooltips/PlayerTooltipContent.jsx';
+import Tag from "../../../components/Tag.jsx";
 
 export default function PlayerCard({ player, tagColors }) {
     const cardRef = useRef(null);
