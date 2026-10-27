@@ -1,12 +1,16 @@
 backend:
-  name: github
-  repo: leoanrdoWer/windgear # Твой репозиторий на GitHub
+  name: git-gateway # Заглушка, для локальной работы не важна
   branch: main
 
-media_folder: "public/images" # Куда сохранять картинки
-public_folder: "/windgear/images" # Откуда они будут доступны на сайте
+# Включаем локальный режим (без GitHub)
+local_backend: true
+
+# Куда сохранять загруженные картинки
+media_folder: "public/images/uploads"
+public_folder: "/windgear/images/uploads"
 
 collections:
+  # --- ИГРОКИ ---
   - name: "players"
     label: "Игроки"
     files:
@@ -18,9 +22,11 @@ collections:
             name: "players"
             widget: "list"
             fields:
-              - {label: "ID", name: "id", widget: "string"}
+              - {label: "ID (латиницей, для ссылки)", name: "id", widget: "string"}
               - {label: "Никнейм", name: "nickname", widget: "string"}
-              - {label: "Скин (картинка)", name: "skin", widget: "image"}
+              - {label: "Файл скина (только имя, например skin-werl.png)", name: "skin", widget: "string"}
+              - {label: "Поколение", name: "generation", widget: "string", default: "Второй набор"}
+              - {label: "Время на сервере", name: "timeOnServer", widget: "string", default: "1 месяц"}
               - {label: "Теги", name: "tags", widget: "list", field: {label: "Тег", name: "tag", widget: "string"}}
               - label: "Статистика"
                 name: "stats"
@@ -29,7 +35,8 @@ collections:
                   - {label: "Проекты", name: "projects", widget: "number", default: 0}
                   - {label: "Постройки", name: "builds", widget: "number", default: 0}
                   - {label: "Гос. заказы", name: "orders", widget: "number", default: 0}
-
+                  - {label: "Транспорт (Aeronautics)", name: "transport", widget: "number", default: 0}
+  # --- ПРОЕКТЫ ---
   - name: "projects"
     label: "Проекты"
     files:
@@ -43,19 +50,23 @@ collections:
             fields:
               - {label: "ID", name: "id", widget: "string"}
               - {label: "Название", name: "title", widget: "string"}
-              - {label: "Описание", name: "description", widget: "text"}
+              - {label: "Краткое описание", name: "description", widget: "text"}
+              - {label: "ID игрока (автора)", name: "authorId", widget: "string", required: false}
 
+  # --- НАСТРОЙКИ САЙТА ---
   - name: "settings"
     label: "Настройки сайта"
     files:
       - name: "general"
-        label: "Общие"
+        label: "Общие настройки"
         file: "public/data/settings.json"
         fields:
-          - {label: "Название сервера", name: "serverName", widget: "string", default: "Windgear"}
+          - {label: "Название сервера", name: "serverName", widget: "string"}
           - {label: "Слоган", name: "slogan", widget: "string"}
-          - {label: "О сервере", name: "about", widget: "markdown"}
-          - {label: "Цвета тегов", name: "tagColors", widget: "list", fields: [
-            {label: "Тег", name: "tag", widget: "string"},
-            {label: "Цвет (HEX)", name: "color", widget: "string", default: "#b87333"}
-          ]}
+          - {label: "О сервере (поддерживает Markdown)", name: "about", widget: "markdown"}
+          - label: "Цвета тегов"
+            name: "tagColors"
+            widget: "list"
+            fields:
+              - {label: "Тег", name: "tag", widget: "string"}
+              - {label: "Цвет (HEX)", name: "color", widget: "string", default: "#b87333"}

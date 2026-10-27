@@ -1,6 +1,11 @@
 export const calculateRating = (stats) => {
     if (!stats) return 0;
-    return (stats.projects * 10) + (stats.builds * 5) + (stats.orders * 3);
+    return (
+        (stats.projects * 10) +
+        (stats.builds * 5) +
+        (stats.orders * 3) +
+        (stats.transport * 8)
+    );
 };
 
 // Возвращает отсортированный массив игроков с добавленным полем rating

@@ -19,9 +19,8 @@ export default function PlayerPage() {
             setPlayer(foundPlayer);
             setTagColors(settingsData.tagColors);
 
-            // Фильтруем проекты, принадлежащие игроку (в будущем добавим связь)
-            // Пока просто выведем все для демонстрации
-            setProjects(projectsData.projects);
+            const playerProjects = projectsData.projects.filter(p => p.authorId === id);
+            setProjects(playerProjects);
         });
     }, [id]);
 

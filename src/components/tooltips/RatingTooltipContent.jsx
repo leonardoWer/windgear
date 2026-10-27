@@ -1,7 +1,7 @@
 import { calculateRating } from '../../utils/rating';
 
 export default function RatingTooltipContent({ player }) {
-    const { projects, builds, orders } = player.stats;
+    const { projects, builds, orders,transport = 0 } = player.stats;
     const total = calculateRating(player.stats);
 
     return (
@@ -22,6 +22,10 @@ export default function RatingTooltipContent({ player }) {
                 <div className="flex justify-between items-center">
                     <span>Гос. заказы ({orders} × 3)</span>
                     <span className="text-white font-bold">{orders * 3}</span>
+                </div>
+                <div>
+                    <div className="text-2xl font-mc text-create-copper mb-1">{player.stats.transport || 0}</div>
+                    <div className="text-xs text-create-muted uppercase tracking-wider">Транспорт</div>
                 </div>
             </div>
 

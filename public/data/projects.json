@@ -1,6 +1,30 @@
 {
   "projects": [
-    { "id": "p1", "title": "Летающий остров", "description": "Огромный остров на дирижаблях Create." },
-    { "id": "p2", "title": "Завод латуни", "description": "Полностью автоматизированный завод." }
+    { "id": "werl-castle", "title": "Белый замок", "description": "Величественный белый замок, символ сервера.", "authorId": "werl" },
+    { "id": "werl-spawn", "title": "Спавн", "description": "Главная зона сервера, где начинают все игроки.", "authorId": "werl" },
+    { "id": "werl-farms", "title": "Мир ферм", "description": "Огромный комплекс автоматизированных ферм.", "authorId": "werl" },
+    { "id": "werl-trade", "title": "Трейд холл на спавне", "description": "Центральная торговая площадь для обмена ресурсами.", "authorId": "werl" },
+    { "id": "werl-marinfod", "title": "Маринфорд на базе Toaster", "description": "Масштабная постройка в морском стиле.", "authorId": "werl" },
+    { "id": "werl-chateau", "title": "Замок Шато на базе MrAnlacker", "description": "Элегантный замок в классическом стиле.", "authorId": "werl" },
+
+    { "id": "antonio-repo", "title": "Репо", "description": "Загадочный проект, о котором все спрашивают.", "authorId": "antonio" },
+    { "id": "antonio-skyscraper", "title": "Небоскрёб", "description": "Высотное здание, меняющее силуэт города.", "authorId": "antonio" },
+    { "id": "antonio-mall", "title": "Торговый центр на спавне", "description": "Крупный ТЦ с множеством магазинов.", "authorId": "antonio" },
+
+    { "id": "toaster-hell-base", "title": "База в китайском адском стиле", "description": "Необычная база, сочетающая китайскую архитектуру и ад.", "authorId": "toaster" },
+    { "id": "toaster-falcon", "title": "Сокол тысячелетия", "description": "Легендарный корабль из Звёздных Войн, воссозданный на Create.", "authorId": "toaster" },
+    { "id": "toaster-rental", "title": "Прокат на спавне", "description": "Сервис по аренде транспорта и механизмов.", "authorId": "toaster" },
+
+    { "id": "debos-nasa", "title": "База в стиле Лагерь Наса в аду", "description": "Футуристичная база в условиях Нижнего мира.", "authorId": "debos" },
+    { "id": "debos-metro", "title": "Метро на спавне", "description": "Сеть подземного транспорта для быстрого перемещения.", "authorId": "debos" },
+
+    { "id": "matvuha-norway", "title": "База в стиле Норвегии", "description": "Уютная скандинавская постройка.", "authorId": "matvuha" },
+
+    { "id": "antity-colosseum", "title": "Колизей", "description": "Огромная арена, построенная с любовью к деталям.", "authorId": "antity" },
+
+    { "id": "lacker-winery", "title": "Винодельня", "description": "Автоматизированное производство вина.", "authorId": "lacker" },
+    { "id": "lacker-wonka", "title": "Фабрика Вилли Вонки", "description": "Сладкая фабрика с безумными механизмами Create.", "authorId": "lacker" },
+
+    { "id": "terefy-swamp", "title": "База на болоте", "description": "Атмосферная постройка, пропитанная духом болот.", "authorId": "terefy" }
   ]
 }
