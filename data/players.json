@@ -4,19 +4,95 @@
       "id": "werl",
       "nickname": "Werl",
       "skin": "skin-werl.png",
-      "generation": "Первое поколение",
-      "timeOnServer": "1 год 2 месяца",
-      "tags": ["Главный админ", "Медиа"],
-      "stats": { "projects": 5, "builds": 25, "orders": 0 }
+      "generation": "Пост-прародитель",
+      "timeOnServer": "6 месяцев",
+      "tags": [
+        "ДИНАСТИЯ",
+        "Медиа",
+        "Строитель"
+      ],
+      "stats": {
+        "projects": 5,
+        "builds": 25,
+        "orders": 0,
+        "transport": 6
+      }
+    },
+    {
+      "generation": "Прародитель",
+      "timeOnServer": "∞",
+      "stats": {
+        "projects": 1,
+        "builds": 2,
+        "orders": 0,
+        "transport": 1
+      },
+      "id": "dima_51",
+      "nickname": "Dima_51",
+      "skin": "dima_51.png",
+      "tags": [
+        "Главный админ",
+        "Играет в ванише",
+        "Яндексоид",
+        "Выбрал трогать траву вместо майнкрафта"
+      ]
     },
     {
       "id": "dante",
       "nickname": "Dante",
-      "skin": "skin-dante.png",
+      "skin": "dante.png",
+      "generation": "Первый набор",
+      "timeOnServer": "5 месяцев",
+      "tags": [
+        "Главный заводчанин",
+        "Строитель ландшафтов"
+      ],
+      "stats": {
+        "projects": 1,
+        "builds": 3,
+        "orders": 1,
+        "transport": 3
+      }
+    },
+    {
+      "generation": "Первый набор",
+      "timeOnServer": "5 месяцев",
+      "stats": {
+        "projects": 3,
+        "builds": 2,
+        "orders": 0,
+        "transport": 1
+      },
+      "id": "antonio",
+      "nickname": "MrAntonio",
+      "skin": "antonio.png",
+      "tags": [
+        "Когда репо?",
+        "Ничего не делает, но постоянно что-то делает",
+        "Строит небоскрёб",
+        "Строит тц",
+        "Строит, но ничего не переносит"
+      ]
+    },
+    {
       "generation": "Второй набор",
-      "timeOnServer": "4 месяца",
-      "tags": ["Главный заводчанин", "Строитель ландшафтов"],
-      "stats": { "projects": 1, "builds": 3, "orders": 1 }
+      "timeOnServer": "5 месяцев",
+      "stats": {
+        "projects": 1,
+        "builds": 3,
+        "orders": 0,
+        "transport": 0
+      },
+      "id": "matvuha",
+      "nickname": "Matvuha132",
+      "skin": "matvuha.png",
+      "tags": [
+        "Архитектор",
+        "Вечно на работе",
+        "Красиво строит уютные постройки",
+        "Строитель",
+        "Хочет играть, но некогда"
+      ]
     },
     {
       "id": "debos",
@@ -24,17 +100,113 @@
       "skin": "skin-debos.png",
       "generation": "Второй набор",
       "timeOnServer": "3 месяца",
-      "tags": ["Строит метро", "Друг Юры"],
-      "stats": { "projects": 2, "builds": 3, "orders": 1 }
+      "tags": [
+        "Строит метро",
+        "Друг Юры"
+      ],
+      "stats": {
+        "projects": 2,
+        "builds": 3,
+        "orders": 1,
+        "transport": 2
+      }
+    },
+    {
+      "generation": "Второй набор",
+      "timeOnServer": "5 месяцев",
+      "stats": {
+        "projects": 2,
+        "builds": 3,
+        "orders": 1,
+        "transport": 2
+      },
+      "id": "toaster",
+      "nickname": "Toaster",
+      "skin": "toaster.png",
+      "tags": [
+        "Дурачина",
+        "Булава мэн",
+        "Не умеет, но пытается",
+        "Очень много раз был на грани бана",
+        "Ничего не делает, но постоянно что-то делает"
+      ]
     },
     {
       "id": "lacker",
       "nickname": "MrAnLacker",
       "skin": "skin-lacker.png",
-      "generation": "Первый набор",
-      "timeOnServer": "8 месяцев",
-      "tags": ["Винодел", "Строитель коробок", "Помогатель"],
-      "stats": { "projects": 2, "builds": 3, "orders": 2 }
+      "generation": "Третий набор",
+      "timeOnServer": "4 месяца",
+      "tags": [
+        "Делает крутые фермы с Create",
+        "Винодел",
+        "Строитель коробок",
+        "Помогатель",
+        "Ничего не делает, но постоянно что-то делает"
+      ],
+      "stats": {
+        "projects": 2,
+        "builds": 5,
+        "orders": 2,
+        "transport": 1
+      }
+    },
+    {
+      "generation": "Третий набор",
+      "timeOnServer": "1 месяц",
+      "stats": {
+        "projects": 0,
+        "builds": 2,
+        "orders": 0,
+        "transport": 0
+      },
+      "id": "badrn",
+      "nickname": "BadRN",
+      "skin": "badrn.png",
+      "tags": [
+        "Устал от майна",
+        "Хотел как лучше, а получилось как всегда",
+        "Строит дороги уже..."
+      ]
+    },
+    {
+      "generation": "Третий набор",
+      "timeOnServer": "2 месяца",
+      "stats": {
+        "projects": 2,
+        "builds": 1,
+        "orders": 0,
+        "transport": 1
+      },
+      "id": "terefy",
+      "nickname": "Terefy",
+      "skin": "terefy.png",
+      "tags": [
+        "Проект по Холлоу Найт",
+        "Ничего не делает, но постоянно что-то делает",
+        "Живёт на болоте",
+        "Красивая база, но кто её строил?",
+        "Дружит с лакером"
+      ]
+    },
+    {
+      "generation": "Четвёртый набор. Набор строителей",
+      "timeOnServer": "1 месяц",
+      "stats": {
+        "projects": 1,
+        "builds": 2,
+        "orders": 0,
+        "transport": 1
+      },
+      "id": "antity",
+      "nickname": "Antity06",
+      "skin": "skin-antity.png",
+      "tags": [
+        "Построил колизей",
+        "Построил кьюти дирижабль",
+        "Постоянно предлагает что-то добавить",
+        "Любит микро-декор майна"
+      ]
     }
   ]
 }
